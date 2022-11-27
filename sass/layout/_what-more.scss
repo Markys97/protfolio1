@@ -1,0 +1,94 @@
+.what-more{
+    width: 100%;
+    display: block;
+    margin-top: 6rem;
+    background: #F8F8F8;
+    position: relative;
+    z-index: 2;
+    &::before{
+      
+        content: url(../asset/imgs/after.png);
+        display: block;
+        z-index: -1;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+    }
+    &__content{
+        width: 100%;
+        padding:30px 0 40px 0 ;
+    }
+    &__title{
+        width: 230px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #000000;
+        text-align: center;
+        margin:0 auto 40px;
+        
+    }
+    &__grid{
+        width: 100%;
+        // border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        gap: 40px 20px;
+       
+      
+    }
+    
+}
+
+
+
+@media screen and (min-width:768px){
+    .what-more{
+        margin-top: 80px;
+        &__grid{
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px 10px;
+           
+          
+        }
+        &__title{
+            width: unset;
+            font-size: 25px;
+            line-height: 30px;
+            margin:0 auto 64px;
+            
+        }
+        &__content{
+        
+            padding:40px 0 330px 0 ;
+        }
+    }
+}
+
+@media screen and (min-width:1600px){
+    .what-more{
+       
+        margin-top: 120px;
+    
+        &__grid{
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px 50px;
+           
+          
+        }
+        &__title{
+            font-size: 35px;
+            line-height: 42px;
+            margin:0 auto 52px;
+            
+        }
+        &__content{
+        
+            padding:40px 0 32px 0 ;
+        }
+    }
+}

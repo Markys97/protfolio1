@@ -1,0 +1,27 @@
+.header{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .header{
+        display: block;
+        background: #1E293B;
+      
+        &__content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+        &__name{
+            max-width: 135px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #E2E8F0;
+        }
+    }
+    
+}

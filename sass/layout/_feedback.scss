@@ -1,0 +1,115 @@
+.feedback{
+    margin-top: 59px;
+    background: url(../asset/imgs/image11Mobile.png);
+    background-repeat: no-repeat!important;
+ 
+    background-size: cover;
+    
+    padding: 40px 0 72px 0;
+    &__title{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase; 
+        color: #FFFFFF;
+        text-align: center;
+        
+    }
+    &__text{
+        max-width: 238.03px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+
+        margin: 20px auto 0;
+        
+    }
+    &__form{
+       
+        margin: 30px auto 21px;
+    }
+    &__attention{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 11px;
+        text-align: center;
+        color: #E2E8F0;
+      
+        display: none;
+        
+    }
+}
+
+
+@media screen and (min-width:768px){
+    .feedback{
+        margin-top: 80px;
+        padding: 40px 0 50px 0;
+        background-position: 0 ;
+
+        &__title{
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__text{
+            font-size: 20px;
+            line-height: 24px;
+            max-width: 574px;
+            margin: 40px auto 0;
+        }
+        &__form{
+       
+            margin: 40px auto 30px;
+        }
+        &__attention{
+            max-width: 455px;
+            font-size: 15px;
+            line-height: 18px;
+            display: block;
+            margin: auto;
+            
+        }
+    }
+   
+}
+
+
+@media screen and (min-width:1600px){
+    .feedback{
+        margin-top: 80px;
+        padding: 40px 0 72px 0;
+        background: rgb(92, 91, 91);
+
+        &__title{
+            font-size: 35px;
+            line-height: 42px;
+        }
+        &__text{
+            font-size: 25px;
+            line-height: 30px;
+            max-width: 574px;
+            margin: 20px auto 0;
+        }
+        &__form{
+       
+            margin: 40px auto 30px;
+        }
+        &__attention{
+            max-width: 455px;
+            font-size: 15px;
+            line-height: 18px;
+            display: block;
+            margin: auto;
+            
+        }
+    }
+}
+

@@ -1,0 +1,139 @@
+.main{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pexels-cottonbro-8657363.jpg);
+    position: relative;
+  &-header{
+    &__container{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #1E293B;
+    }
+  }
+  &__content{
+    padding-top:120px ;
+    padding: 120px 0 129px;
+    max-width: 275px;
+    margin: 0 auto;
+  }
+  h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 12px;
+    
+  }
+  &__text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+    
+  }
+  &__wrapper-btn{
+    display: flex;
+    justify-content: center;
+}
+&__bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    img{
+
+        display: block;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:  -40px;
+    }
+
+}
+}
+
+@media screen and (min-width:768px) {
+    .main{
+        padding-top: 18px;
+      &-header{
+        &__container{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #1E293B;
+        }
+      }
+      &__content{
+        padding-top:120px ;
+        padding: 150px 0 180px;
+        max-width: 622px;
+        margin: 0 auto;
+      }
+      h1{
+        font-size: 50px;
+        line-height: 61px;
+        margin-bottom: 29px;
+      
+        
+      }
+      &__text{
+        font-size: 22px;
+        line-height: 27px;
+        margin: 0 auto 30px;
+        max-width: 471px;
+      }
+      &-header{
+        &__container{
+           
+            background: transparent;
+        }
+      }
+    
+   
+    }
+}
+
+@media screen and (min-width:1600px) {
+ 
+  .main{
+    background: rgb(92, 91, 91);
+    &-header{
+        &__open-btn{
+            display: none;
+        }
+    }
+    &__content{
+        margin: unset;
+        max-width: unset;
+    }
+    h1{
+        text-align: unset;
+        font-size: 60px;
+        line-height: 73px;
+    }
+    &__text{
+        max-width: 471px;
+        text-align: unset;
+        margin: 0 0 43px 0;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    &__wrapper-btn{
+        justify-content: flex-start;
+    }
+  }
+  &__bg{
+    display: none;
+    
+  }
+}
