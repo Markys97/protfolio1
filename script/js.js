@@ -53,6 +53,14 @@ const swiper = new Swiper('.swiper', {
         behavior: 'smooth'
       });
   })
+  document.querySelector('.footer__start-btn').addEventListener('click',function(e){
+    e.preventDefault()
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+  })
 
 //handler quantity
 let moinsBtns= document.querySelectorAll('.item-product__price-btn--moins')
