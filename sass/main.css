@@ -2227,6 +2227,10 @@ ul {
   text-underline-offset: 5px;
 }
 
+.footer__btn {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .footer {
     padding: 40px 0;
